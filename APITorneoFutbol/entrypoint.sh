@@ -1,7 +1,7 @@
 #!/bin/bash
 
-composer install
-php artisan migrate --force
-php artisan serve --host=0.0.0.0 --port=8000
+composer install #Se vuelve a instalar composer 
+php artisan migrate --force #Se hacen las migraciones
+php artisan serve --host=0.0.0.0 --port=8000 #Se ejecuta el server dentro del contenedor en el puerto 8000
 
 php-fpm

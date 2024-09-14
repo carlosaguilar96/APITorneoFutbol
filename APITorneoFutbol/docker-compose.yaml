@@ -3,20 +3,15 @@ version: '3.8'
 services:
   app:
     build:
-      context: .
+      context: . #Se le indica que hay un archivo dockerfile que usará para construir el contenedor
       dockerfile: Dockerfile
     image: laravel-app
     container_name: laravel-app
     volumes:
-      - .:/var/www
+      - .:/var/www 
     ports:
-      - "8000:8000"
+      - 8000:8000 # Puerto local y del docker
     environment:
-      - DB_CONNECTION=sqlite
-      - DB_DATABASE=/var/www/database/database.sqlite
-    networks:
-      - laravel
+      - DB_CONNECTION=sqlite 
+      - DB_DATABASE=/var/www/database/database.sqlite #Ubicación del archivo database.sqlite dentro del docker
 
-networks:
-  laravel:
-    driver: bridge
