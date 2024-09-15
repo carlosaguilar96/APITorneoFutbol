@@ -2,7 +2,7 @@
 
 Pasos para usar el contenedor:
 
-  1) Descargar la aplicación de Docker Desktop.
+  1) Descargar la aplicación de Docker Desktop (https://www.docker.com/products/docker-desktop/)
   2) Abrir Docker Desktop para que se active el Docker Engine.
   3) Clonar el proyecto.
   4) Copiar y pegar el archivo ".env.example" en la carpeta raíz del proyecto. Luego, cambiarle el nombre a la copia para que sea el archivo ".env"
